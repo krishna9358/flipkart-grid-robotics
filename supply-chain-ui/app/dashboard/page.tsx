@@ -116,6 +116,7 @@ export default function PhotoAnalysisUI() {
               <p className="text-lg">Price : INR 140/- </p>
               <p className="text-lg">Expiry Date: BEST BEFORE EIGHTEEN MONTH FROM MANUFACTURE</p>
               <p className="text-lg">MFD: 03/22</p>
+              <p className="text-lg">Freshness : NULL </p>
               
 
 
