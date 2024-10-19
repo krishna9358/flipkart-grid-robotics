@@ -63,7 +63,7 @@ export function SiteFooter() {
 									{nav.label}
 								</h2>
 								<ul className='gap-2 grid'>
-									{nav.items.map((item) => (
+									{nav.items?.map((item) => (
 										<li key={item.name}>
 											<Link
 												href={item.href}
