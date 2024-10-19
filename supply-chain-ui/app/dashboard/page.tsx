@@ -83,8 +83,8 @@ export default function PhotoAnalysisUI() {
             </div>
             <div className='flex justify-center space-x-4'>
                 <p className='ml-3'>1. Image Recognition</p>
-                <p className='ml-3'>1. OCR Text Extraction</p>
-                <p className='ml-3'>1. Freshness Checking</p>
+                <p className='ml-3'>2. OCR Text Extraction</p>
+                <p className='ml-3'>3. Freshness Checking</p>
 
             </div>
             {isLoading && (
