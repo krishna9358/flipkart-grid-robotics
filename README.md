@@ -48,9 +48,9 @@ The system provides an automated pipeline for inventory management and freshness
    - Kafka or Redis queues handle asynchronous processing of data uploaded by clients.
    
 3. **Machine Learning Pipeline**:
-   - **Text Analysis**: Extract text from images using PyTesseract.
+   - **Text Analysis**: Extract text from images using YOLOv11 and Paddleocr.
    - **Object Detection**: Detect objects (fruits/vegetables) using YOLOv11.
-   - **Quality Check**: Perform freshness analysis using CNN-based models.
+   - **Quality Check**: Perform freshness analysis using YOLOv11.
    
 4. **Results Aggregator**:
    - Aggregates the output from all models (text, object data, freshness score).
@@ -68,6 +68,10 @@ The system provides an automated pipeline for inventory management and freshness
 5. Data stored on IPFS, and Solana smart contracts trigger further actions like reordering or dispatching items.
 
 ## Deployed :
+
+Demo Credentials : 
+username : test@example.com
+password : password123
 
 
 ### Key Future Enhancements:
