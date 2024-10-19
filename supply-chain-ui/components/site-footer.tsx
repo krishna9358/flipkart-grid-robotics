@@ -39,6 +39,12 @@ const footerNavs = [
 	},
 	{
 		label: "Team behind SupplyChain",
+		items:[
+			{
+				href: "https://www.linkedin.com/in/krishna-mohan-194124167/",
+				name: "Krishna Mohan",
+			},
+		]
 	},
 ];
 
