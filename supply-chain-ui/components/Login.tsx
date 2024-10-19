@@ -83,7 +83,7 @@ export default function Login() {
             className="w-full p-8 rounded-2xl shadow-2xl bg-gradient-to-br from-gray-800/80 via-gray-900/80 to-black/80 backdrop-blur-sm"
           >
             <h1 className="text-3xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
-              Welcome to Rakshak
+              Welcome to SupplyChain
             </h1>
             <p className="text-sm text-gray-400 mb-8">Sign in with an account</p>
             
