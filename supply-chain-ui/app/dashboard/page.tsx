@@ -57,7 +57,7 @@ export default function PhotoAnalysisUI() {
     <Navbar />
 
       {/* Main Content */}
-      <main className="flex-grow container mx-auto p-4 flex items-center justify-center">
+      <main className="flex-grow container mx-auto p-4 flex items-center justify-center bg-black">
         {step === 0 && (
           <div className="text-center space-y-4">
             <h1 className="text-2xl font-bold mb-4">Upload or Scan Photo</h1>
