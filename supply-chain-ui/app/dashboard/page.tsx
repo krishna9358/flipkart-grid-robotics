@@ -81,6 +81,12 @@ export default function PhotoAnalysisUI() {
                 <Camera className="mr-2 h-4 w-4" /> Scan Photo
               </Button>
             </div>
+            <div className='flex justify-center space-x-4'>
+                <p className='ml-3'>1. Image Recognition</p>
+                <p className='ml-3'>1. OCR Text Extraction</p>
+                <p className='ml-3'>1. Freshness Checking</p>
+
+            </div>
             {isLoading && (
               <div className="mt-4">
                 <Progress value={50} className="w-[300px]" />
