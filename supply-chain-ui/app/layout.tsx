@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Rakshak",
-  description: "Created By NullPtr",
+  title: "SupplyChain",
+  description: "Created By Krishna",
 };
 
 export default function RootLayout({

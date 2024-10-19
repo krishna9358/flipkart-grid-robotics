@@ -28,7 +28,7 @@ const footerNavs = [
 				name: "Explore Stations",
 			},
 			{
-				href: "/nft-details?nftAddress=",
+				href: "/dashboard",
 				name: "Check your Inventory",
 			},
 			{
@@ -38,34 +38,7 @@ const footerNavs = [
 		],
 	},
 	{
-		label: "Team behind Rakshak",
-		items: [
-			{
-				href: "https://www.linkedin.com/in/sanya-kumari-upadhyay-19363728b/",
-				name: "Sanya Kumari",
-			},
-			{
-				href: "https://www.linkedin.com/in/krishna-mohan-194124167/",
-				name: "Krishna Mohan",
-			},
-			{
-				href: "https://www.linkedin.com/in/sidharth-banthia-0aa308272/",
-				name: "Sidharth Banthia",
-			},
-			{
-				href: "https://www.linkedin.com/in/niharika-sharma-84307b24a/",
-				name: "Niharika Sharma",
-			},			
-			{
-				href: "https://www.linkedin.com/in/sameer-kumar-9a9b69278/",
-				name: "Sameer Kumar",
-			},
-						
-			{
-				href: "https://www.linkedin.com/in/ayushi-choudhary-3b7707285/",
-				name: "Ayushi Choudhary",
-			},
-		],
+		label: "Team behind SupplyChain",
 	},
 ];
 
@@ -79,9 +52,9 @@ export function SiteFooter() {
 							
 							<span className='ml-2'>
 								<span className="flex"><IconBox className="ml-3px"/>
-								Rakshak</span></span>
+								SupplyChain</span></span>
 						</Link>
-						<p className='max-w-xs'>Inventory Management System for  <br /> Police Department </p>
+						<p className='max-w-xs'>Inventory Management System for  <br /> Ecommerce </p>
 					</div>
 					<div className='gap-8 sm:gap-10 grid grid-cols-1 sm:grid-cols-3'>
 						{footerNavs.map((nav) => (
@@ -122,7 +95,7 @@ export function SiteFooter() {
 					<span className='text-gray-400 text-sm sm:text-center '>
 						Copyright © {new Date().getFullYear()}{" "}
 						<Link href='/' className='cursor-pointer'>
-							Rakshak
+							SupplyChain
 						</Link>
 						. All Rights Reserved.
 					</span>
