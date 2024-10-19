@@ -1,12 +1,13 @@
 "use client";
 
 import {useState} from "react";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Link from "next/link";
+import { useRouter } from 'next/navigation';
 
 export default function Login() {
   const [email, setEmail] = useState("");
