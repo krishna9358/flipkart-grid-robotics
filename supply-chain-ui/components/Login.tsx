@@ -15,7 +15,7 @@ export default function Login() {
   const [error, setError] = useState("");
   const router = useRouter();
 
-  const correctUsername = "test@example.com";
+  const correctUsername = "test@gmail.com";
   const correctPassword = "password123";
 
   const validateEmail = (email : string) => {
