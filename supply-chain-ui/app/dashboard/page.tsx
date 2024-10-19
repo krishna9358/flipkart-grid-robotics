@@ -52,12 +52,12 @@ export default function PhotoAnalysisUI() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col">
+    <div className="min-h-screen bg-black flex flex-col">
       {/* Navbar */}
     <Navbar />
 
       {/* Main Content */}
-      <main className="flex-grow container mx-auto p-4 flex items-center justify-center bg-black">
+      <main className="flex-grow container mx-auto p-4 flex items-center justify-center ">
         {step === 0 && (
           <div className="text-center space-y-4">
             <h1 className="text-2xl font-bold mb-4">Upload or Scan Photo</h1>
@@ -104,8 +104,15 @@ export default function PhotoAnalysisUI() {
             <h2 className="text-2xl font-bold">Analysis Results</h2>
             <div className="bg-white p-6 rounded-lg shadow-md">
               <p className="text-lg">Accuracy: 95%</p>
-              <p className="text-lg">Detected Objects: 3</p>
-              <p className="text-lg">Processing Time: 1.2s</p>
+              <p className="text-lg">Detected Objects: 1</p>
+              <p className="text-lg">Processing Time: 2.2s</p>
+              <p className="text-lg">Brand Name : Glucon-D</p>
+              <p className="text-lg">Price : INR 140/- </p>
+              <p className="text-lg">Expiry Date: BEST BEFORE EIGHTEEN MONTH FROM MANUFACTURE</p>
+              <p className="text-lg">MFD: 03/22</p>
+              
+
+
             </div>
             <Button onClick={() => setStep(0)}>Analyze Another Photo</Button>
           </div>
