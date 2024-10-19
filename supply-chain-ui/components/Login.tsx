@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import {useState} from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
@@ -12,13 +12,12 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const router = useRouter(); // Next.js router for navigation
+  const router = useRouter();
 
-  // Hardcoded username and password (dummy values)
   const correctUsername = "test@example.com";
   const correctPassword = "password123";
 
-  const validateEmail = (email: string) => {
+  const validateEmail = (email : string) => {
     const re =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
@@ -34,28 +33,26 @@ export default function Login() {
     setError("");
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
-    // Validate email before checking credentials
     if (!validateEmail(email)) {
       setError("Invalid email format");
-      return; // Stop further execution if email is invalid
+      return;
     }
 
-    // Check if email and password match hardcoded credentials
     if (email !== correctUsername || password !== correctPassword) {
       setError("Invalid username or password");
     } else {
-      // Simulate successful login by navigating to /dashboard
-      console.log("Login successful with email:", email);
-      router.push("/dashboard");  // Navigate to dashboard
+      // Navigate to dashboard
+      if (typeof window !== 'undefined') {
+        router.push("/dashboard");
+      }
     }
   };
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-gray-900 via-black to-gray-800">
-      {/* Background overlay */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -78,7 +75,6 @@ export default function Login() {
         </Link>
 
         <div className="flex-grow flex flex-col items-center justify-center max-w-md mx-auto w-full">
-          {/* Form container */}
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -90,7 +86,6 @@ export default function Login() {
             </h1>
             <p className="text-sm text-gray-400 mb-8">Sign in with an account</p>
             
-            {/* Sign in form */}
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <Input
@@ -122,7 +117,6 @@ export default function Login() {
               </Button>
             </form>
 
-            {/* Divider */}
             <div className="my-6 text-center w-full">
               <div className="relative">
                 <div className="absolute inset-0 flex items-center">
@@ -134,7 +128,6 @@ export default function Login() {
               </div>
             </div>
 
-            {/* Google Sign in */}
             <Button variant="outline" className="w-full bg-transparent border-gray-700 text-white hover:bg-gray-800 mt-4">
               Google
             </Button>
